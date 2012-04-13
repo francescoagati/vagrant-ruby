@@ -1,0 +1,76 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (1.4.0)
+    aws (0.99.1)
+    database (1.1.0)
+      aws (>= 0.0.0)
+      mysql (>= 1.2.0)
+      postgresql (>= 0.0.0)
+      xfs (>= 0.0.0)
+    openssl (1.0.0)
+    postgresql (0.99.2)
+      openssl (>= 0.0.0)
+    selinux (0.5.2)
+    vim (1.0.2)
+    xfs (1.0.0)
+
+GIT
+  remote: git://github.com/fnichol/chef-rvm.git
+  ref: master
+  sha: 39390a4a1b92ea2785d2155525a5e276e3b677e3
+  specs:
+    rvm (0.8.7)
+
+GIT
+  remote: git://github.com/xforty/chef-initdb.git
+  ref: master
+  sha: 7cf0289a5a78ef3fc36d3cebebd68b1c27254480
+  specs:
+    initdb (0.0.1)
+      database (>= 0.0.0)
+
+GIT
+  remote: git://github.com/xforty/chef-rpmforge.git
+  ref: master
+  sha: 9820de5f2865e6f5a35bcbb692d15467349bb155
+  specs:
+    rpmforge (0.0.1)
+
+GIT
+  remote: git://github.com/xforty/chef-xforty.git
+  ref: master
+  sha: c1ccf6724512b1332e1af965db21029bf658357c
+  specs:
+    xforty (0.0.1)
+      apt (>= 0.0.0)
+      rpmforge (>= 0.0.0)
+      selinux (>= 0.0.0)
+      vim (>= 0.0.0)
+
+GIT
+  remote: git://github.com/xforty/cookbooks.git
+  path: mysql
+  ref: master
+  sha: 7777494638d87a06bf1c1d8a64f015cb38998453
+  specs:
+    mysql (1.2.2)
+      openssl (>= 0.0.0)
+
+GIT
+  remote: git@github.com:francescoagati/apache2.git
+  ref: master
+  sha: e0d5de6ccb38c931242a41aab812313c22f8ac8d
+  specs:
+    apache2 (1.1.7)
+
+DEPENDENCIES
+  apache2 (>= 0)
+  database (= 1.1.0)
+  initdb (>= 0)
+  mysql (>= 0)
+  postgresql (= 0.99.2)
+  rpmforge (>= 0)
+  rvm (>= 0)
+  xforty (>= 0)
+
